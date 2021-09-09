@@ -1,0 +1,27 @@
+.main-section {
+  margin: 10%;
+}
+// all changes to the labels above the calendar
+.label-container {
+  margin-bottom: 7%;
+  display: flex;
+  justify-content: space-between;
+
+  & .month-switcher {
+    display: flex;
+
+    & .month-preview {
+      display: flex;
+      mask-image: linear-gradient(to right, transparent, white, transparent);
+      justify-content: space-between;
+      & p {
+        padding-top: 2px;
+        text-align: center;
+        margin-right: 30px;
+      }
+      & p:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}

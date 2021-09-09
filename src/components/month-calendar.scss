@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+//all changes to the calendar
+.calendar-container {
+  & .days-label {
+    display: flex;
+    margin-bottom: 3%;
+    & p {
+      text-align: center;
+      align-self: flex-start;
+      flex: 1 1 144px;
+      max-width: 200px;
+      letter-spacing: 3px;
+      border-bottom: 1px solid black;
+    }
+  }
+
+  & .week-container {
+    display: flex;
+    & .day-container {
+      text-align: center;
+      flex: 1 1 144px;
+      height: 110px;
+      max-width: 200px;
+      & .day-out-of-month {
+        color: #c8c6c6;
+      }
+      & .day-in-month {
+        color: black;
+      }
+      #currentDate {
+        display: flex;
+        color: white;
+        margin: auto;
+        background-color: black;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

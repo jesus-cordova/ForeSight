@@ -1,0 +1,24 @@
+.week-container {
+  display: flex;
+  justify-content: space-between;
+}
+.slot-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 250px;
+  & .date-label {
+    text-align: center;
+    font-size: 20px;
+  }
+  & .day-label {
+    text-align: center;
+  }
+  & .day-container {
+    margin-top: 10px;
+    border: 1px solid black;
+    height: 500px;
+  }
+  #currentDate {
+    box-shadow: 0px 10px 10px 0px gray;
+  }
+}
