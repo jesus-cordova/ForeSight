@@ -9,7 +9,7 @@ import "./week-calendar.scss";
 //custom components
 
 function WeekCalendar(props) {
-  const [value, setValue] = useState(props.value);
+  const { value, setValue } = props
   const startWeekDay = value.clone().startOf("week").subtract(1, "day");
   const endWeekDay = value.clone().endOf("week");
   const originalDay = moment();
@@ -34,8 +34,8 @@ function WeekCalendar(props) {
     setValue(value.clone().add(1, "week"));
   }
   useEffect(() => {
-    setValue(props.value);
-  }, [props.value]);
+    setValue(value);
+  }, [value]);
   return (
     <div className="week-container">
       <ArrowLeftIcon onClick={prevWeek} />
