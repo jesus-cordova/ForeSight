@@ -50,6 +50,7 @@ function CalendarPage() {
         </div>
         <WeekCalendar
           value={value}
+          setValue={setValue}
           nextMonth={nextMonth}
           prevMonth={previousMonth}
         />
